@@ -1,0 +1,180 @@
+/* Crie uma pasta separada para o doc.css (ex: estilo > style.css*/
+
+@charset "UTF-8";
+
+/*
+    Cores:
+    VERDE CLARO 
+    #c5ebd6
+    #83e1ad
+    #3ddc84
+    #2fa866
+    #1a5c37
+    #063d1e
+    VERDEESCURO
+
+*/
+
+/*
+    Cascata de estilo:
+    - root
+    - header
+
+*/
+
+@font-face {
+    font-family: "idroid";
+    src: url("fontes/idroid.otf") format(opentype);
+}
+
+@font-face {
+    font-family: "Motorway";
+    src: url("https://db.onlinewebfonts.com/t/55dd720f4f2ec92b19e93161d415a424.eot");
+    src: url("https://db.onlinewebfonts.com/t/55dd720f4f2ec92b19e93161d415a424.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/55dd720f4f2ec92b19e93161d415a424.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/55dd720f4f2ec92b19e93161d415a424.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/55dd720f4f2ec92b19e93161d415a424.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/55dd720f4f2ec92b19e93161d415a424.svg#Motorway W01 Regular")format("svg");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@media(max-width: 720px) {
+    header {
+        font-size: 0.9em;
+        }
+    main {
+        font-size: 0.8em;
+    }
+
+   }
+
+
+body {
+    font: normal normal 1em 'Roboto', sans-serif;
+    /*Cor real #c5ebd6*/
+    background-color: #84E1AD;
+    margin: 0px;
+    font-size: 12px;
+
+}
+
+header {
+    color: white;
+    font-family:"Motorway", sans-serif;
+    background-image: linear-gradient(to bottom, #49a872, #1B5936 90%);
+
+    margin: 0px;
+}
+
+header > h1 {
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
+
+    padding: 10px;
+    margin: 0px;
+}
+
+header > h2 {
+    text-align: center;
+    color: white;
+    font: bold 0.8em "Varela Round", sans-serif;
+    background-image: none;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
+
+    padding: 10px 25%;
+    margin: 0px;
+}
+
+header > nav > a {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    font: bolder 0.8em Arial, Helvetica, sans-serif;
+
+    margin: 0px 15px;
+    
+}
+header > nav > a::after {
+    content: none;
+}
+header > nav > a:hover {
+    background-color: #2FA866;
+    border-radius: 20px;
+    padding: 1px 10px;
+}
+
+.especial {
+    /*font-family: "idroid", Impact, Haettenschweiler, sans-serif;*/
+    color: #1B5936;
+    font: bold 1.5em "idroid", Impact, Haettenschweiler, sans-serif;
+}
+h1.principal {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+h2 {
+    background-image: linear-gradient(to right , #84E1AD, rgba(255, 255, 255, 0));
+    border-radius: 20px;
+    padding: 5px 10px ;
+
+}
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+main
+        {
+            background-color: white;
+            padding: 10px;
+            margin: 0px 10%;
+            border-radius: 0px 0px 30px 30px;
+        }
+strong {
+    color: #1B5936;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+aside {
+    background-color: #C5EBD6;
+    font-size:smaller ;
+    padding: 0px;
+    border-radius: 5px;
+
+}
+aside > section {
+    padding: 10px;
+}
+#aside-h1 {
+    font-size:  smaller;
+    padding: 5px;
+    margin: 0px;
+    color: white;
+    background-color: #2FA866;
+    border-radius: 5px 5px 0px 0px;
+
+    
+
+}
+a {
+    text-decoration: none;
+    color: #1A5A37;
+} 
+a::after {
+
+    content: "🔗";
+}
+li::before {
+    content: "✓";
+}
+footer{
+    color: white;
+    background-color: #1A5A37;
+    margin-top: 15px;
+}
+footer > p {
+    text-align: center;
+    padding: 10px 10%;
+    margin: 0px;
+}

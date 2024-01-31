@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no seu próprio servidor</p>
+    <video src="media/meu-video.webm" width="250" controls></video>
+    <!-- Este vídeo por mais que o tamanho de visualização seja menor do que a original o tamanho do arqui permanece o mesmo-->
+    <p>Para a flexibilidade esse vídeo pode ser carregado em outros formatos:</p>
+    <video width="500" poster="imagens/thumbnail.png" controls >
+        <source src="media/meu-video.mp4" type="video/mp4">
+        <source src="media/meu-video.mkv" type="video/mkv">
+        <source src="media/meu-video.webm" type="video/webm">
+    </video>
+    <h1>Inserindo vídeos hospedados externamente</h1>
+    <h2>Youtube</h2>
+    <!--Função INCORPORAR-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ormz9UExBhk?si=8Z23E8zvegO0QrQ1&amp;start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h2>Vimeo</h2>
+    <iframe src="https://player.vimeo.com/video/645903440?h=b9908535c0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/645903440">Menagerie</a> from <a href="https://vimeo.com/jackwgray">Jack Gray</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>
