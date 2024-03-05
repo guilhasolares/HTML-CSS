@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inome">Nome: </label>
+            <input type="text" name="name" id="iname" placeholder="Nome completo" required>
+        </p>
+        <p>
+            <label for="imedia">Média: </label>
+            <input type="number" name="media" id="imedia" placeholder="0 - 10" min="0" max="10" step="0.1" required>
+        </p>
+        <p>
+            <label for="iperiodo">Período letivo</label>
+            <input type="month" name="periodo" id="iperiodo" value="2020-07" required>
+        </p>
+        <p>
+            <label for="idt">Dia e hora da prova</label>
+            <input type="datetime-local" name="dt" id="idt">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>
